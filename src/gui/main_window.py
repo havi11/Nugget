@@ -387,7 +387,7 @@ class MainWindow(QtWidgets.QMainWindow):
             device_build = self.device_manager.get_current_device_build()
             device_model = self.device_manager.get_current_device_model()
             if (device_model.startswith("iPhone18,")
-                or device_ver < Version("26.4")
+                or device_ver < Version("26.6")
                 or device_build == "23E5207q" or device_build == "23E5218e"):
                 self.ui.posterboardPageBtn.show()
             else:
